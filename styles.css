@@ -1,0 +1,22 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+  /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+:root {
+  --paper-font-common-base_-_font-family: Inter, sans-serif !important;
+  --ha-card-header-font-family: Inter, sans-serif !important;
+}
+
+body,
+.card-header,
+:host ::slotted(.card-header) {
+  font-family: Inter, sans-serif !important;
+}
